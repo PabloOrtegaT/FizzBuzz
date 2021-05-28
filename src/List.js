@@ -5,8 +5,8 @@ const divStyleRed = {
     backgroundColor: "red", 
     borderRadius: "15px",
     color: "black",
-    width: "10vw",
-    heigth: "10vh",
+    width: "100px",
+    heigth: "100px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -17,8 +17,8 @@ const divStyleYellow = {
     backgroundColor: "yellow", 
     borderRadius: "15px",
     color: "black",
-    width: "10vw",
-    heigth: "10vh",
+    width: "100px",
+    heigth: "100px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -29,8 +29,8 @@ const divStyleGreen = {
     backgroundColor: "green", 
     borderRadius: "15px",
     color: "black",
-    width: "10vw",
-    heigth: "10vh",
+    width: "100px",
+    heigth: "100px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -41,8 +41,8 @@ const divStyleWhite = {
     backgroundColor: "grey", 
     borderRadius: "15px",
     color: "black",
-    width: "10vw",
-    heigth: "10vh",
+    width: "100px",
+    heigth: "100px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -51,13 +51,12 @@ const divStyleWhite = {
 
 const listStyleItems = {
     display: "grid",
-    gridTemplateColumns: "repeat(5, 9.5vw)",
-    gridTemplateRows: "repeat(5, 9.5vh)",
-    gridGap: "1rem",
+    gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
+    gridTemplateRows: "100px",
     width: "100vw",
-    minHeight: "100vh",
-    gridAutoFlow: "dense",
-    padding: "5px"
+    height: "100vh",
+    gridGap: "1rem",
+    gridAutoFlow: "dense"
 };
 
 const List = (props) => {
